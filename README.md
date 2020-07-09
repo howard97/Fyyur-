@@ -131,9 +131,16 @@ To start and run the local development server,
 2. Install the dependencies:
   ```
   $ pip install -r requirements.txt
+  
+  ```
+3. Create the models in your database
+  ```
+  $ flask db migrate
+  $ flask db upgrade
+  
   ```
 
-3. Run the development server:
+4. Run the development server:
   ```
   $ export FLASK_APP=myapp
   $ export FLASK_ENV=development # enables debug mode
